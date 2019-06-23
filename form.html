@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=»utf-8″> 
+</head>
+<body>
+<title>Mi formulario</title>
+<h3>Encuesta de satisfacción del aspirador Aspiratodo</h3>
+<form method="post" action="migit.php">
+    <div name="inicio">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text">
+    </div>
+	<br/>
+    <div>
+      <label for="ape1">Primer apellido:</label>
+      <input id="ape1" type="text">
+    </div>
+	<br/>
+    <div>
+      <label for="ape2">Segundo apellido:</label>
+      <input id="ape2" type="text">
+    </div>
+	<br/>
+    <div>
+      <label for="email">E-mail:</label>
+      <input id="email" type="text">
+    </div>
+	<br/>
+    <div>
+      <label for="codigo postal">Código Postal:</label>
+      <input id="codPostal" type="number">
+   </div>
+   <br/>
+   <div>
+      <label for="nacionalidad">Nacionalidad:</label>
+      <select id="nacionalidad">
+        <option value="ES">Española</option>
+        <option value="IT">Italiana</option>
+        <option value="FR">Francesa</option>
+      </select>
+  </div>
+  <br/>
+  <div>
+      <label for="sexo">Sexo:</label>
+      <input name="sexo" type="radio" value="M">Masculino
+      <input name="sexo" type="radio" value="F">Femenino
+  </div>
+  <br/>
+  <div>
+      <label for="nivelDeSatisfacción">Nivel de satisfacción:</label>
+      <select id="satisfacción">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+  </div>
+  <br/>
+  <div>
+    <label for="puntosPositivos">Puntos positivos:</label>
+    <textarea id="puntosPositivos"></textarea>
+  </div>
+  <br/>
+  <div>
+	<label for="puntosNegativos">Puntos negativos:</label>
+	<textarea id="puntosNegativos"></textarea>
+  </div>
+  <br/>
+  <div>
+	<label for="pregunta1">¿Cómo calificaría el estado en el que recibió el artículo?</label>
+	<input name="estado" type="radio" value="excelente"> Excelente
+	<input name="estado" type="radio" value="bueno"> Bueno
+	<input name="estado" type="radio" value="regular"> Regular
+	<input name="estado" type="radio" value="pesimo"> Pésimo
+  </div>
+  <br/>
+  <div>
+	<label for="pregunta2">¿Cómo calificaría nuestro servicio de atención al cliente?</label>
+	<select id="atencionCliente">
+		<option value="excelente"> Excelente </option>
+		<option value="bueno"> Bueno </option>
+		<option value="regular"> Regular </option>
+		<option value="pesimo"> Pésimo </option>
+	</select>
+  </div>
+  <br/>
+  <a href="#inicio">Volver a Inicio</a>
+  <br/>
+  <br/>
+  <input type="submit" value="Enviar"> 
+</form>
+</body>
+</html>
